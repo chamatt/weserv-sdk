@@ -2,9 +2,7 @@
   "name": "weserv-sdk",
   "version": "0.1.0",
   "description": "Unofficial weserv.nl SDK, a free image transformation service",
-  "main": "src/index.js",
   "scripts": {
-    "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist",
     "start": "ts-node-dev src/index.ts"
   },
   "author": "chamatt <matt.vicent@gmail.com>",
@@ -12,6 +10,8 @@
   "files": [
     "dist/**/*"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",

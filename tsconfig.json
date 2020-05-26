@@ -1,28 +1,35 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "outDir": "./dist",
-      "rootDir": "./src",
-      "strict": true,
-      "strictPropertyInitialization": false,
-      "baseUrl": "./src",
-      "allowJs": true,
-      "paths": {
-        "@modules/*": ["modules/*"],
-        "@config/*": ["config/*"],
-        "@shared/*": ["shared/*"]
-      },
-      "esModuleInterop": true,
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "forceConsistentCasingInFileNames": true
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "allowJs": true,
+    "paths": {
+      "@modules/*": [
+        "modules/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ]
     },
-    "exclude": [
-      "commitlint.config.js",
-      "coverage",
-      "jest.config.js",
-      "prettier.config.js",
-      "dist"
-    ]
-  }
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+  },
+  "exclude": [
+    "commitlint.config.js",
+    "coverage",
+    "jest.config.js",
+    "prettier.config.js",
+    "dist"
+  ]
+}
