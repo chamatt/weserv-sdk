@@ -1,0 +1,1 @@
+export const DEFAULT_WESERV_URL =  "https://images.weserv.nl/"
